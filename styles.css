@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+
+*{
+    border: none;
+    margin: 0px;
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+}
+
+.p-1{
+    color: #A8BFC9;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.p-2{
+    color: #DBE8ED;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #1A2A33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.game-choice{
+    width: 460px;
+    background-color: #1F3641;
+    border-radius: 10px;
+    padding: 24px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.x-o-choice{
+    display: flex;
+    justify-content: space-around;
+    margin: 24px 0px 17px 0px;
+    width: 412px;
+    height: 72px;
+    background-color: #1A2A33;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.icons{
+    transform: scale(0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-x{
+    fill: #A8BFC9;
+}
+
+.icon-o{
+    fill: #A8BFC9;
+}
+
+.background-x,
+.background-o{
+    border-radius: 10px;
+    width: 198px;
+    display: flex;
+    justify-content: center;
+}
+
+.choice-pick{
+    border-radius: 10px;
+}
+
+.starter-button-holder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.starter-button{
+    width: 460px;
+    height: 67px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cpu-button{
+    background-color: #F2B137;
+    box-shadow: 0px 5px #D7861A;
+}
+
+.player-button{
+    background-color: #31C3BD;
+    box-shadow: 0px 5px #47abcc;
+    margin-top: 20px;
+}
+
+.player-button:hover{
+    background-color: #65E9E4;   
+}
+.cpu-button:hover{
+    background-color: #FFC860;
+}
+
+.starter-div{
+    display: block;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    width: 140px;
+    height: 140px;
+    background-color: #1F3641;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.game-logo{
+    width: 70px;
+    height: 35px;
+}
+
+.turns{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 52px;
+    background-color: #1F3641;
+    border-radius: 10px;
+    color: #A8BFC9;
+}
+
+.turns-x,
+.turns-o{
+    transform: scale(0.5);
+    fill: #A8BFC9;
+}
+
+.turns-o{
+    display: none;
+}
+
+.restart{
+    width: 52px;
+    height: 52px;
+    background-color: #A8BFC9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 5px #71706E;
+}
+
+.restart:hover{
+    background-color: #DBE8ED;
+}
+
+.scores{
+    width: 140px;
+    height: 72px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1A2A33;
+}
+
+.x-score{
+    background-color: #31C3BD;
+}
+
+.ties-score{
+    background-color: #A8BFC9;
+}
+
+.cpu-score{
+    background-color: #F2B137;
+}
+
+.score-ids{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.score-numbers{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.game-start{
+    display: none;
+}
+
+.end-board{
+    width: 100%;
+    height: 268px;
+    background-color: #1F3641;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.results{
+    display: flex;
+    align-items: center;
+}
+
+.results-text{
+    margin-left: 25px;
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.quit-button,
+.next-button{
+    height: 52px;
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.quit-button{
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    box-shadow: 0px 5px #71706E;
+    width: 76px;
+}
+
+.quit-button:hover{
+    background-color: #DBE8ED;
+}
+
+.next-button{
+    background-color: #F2B137;
+    border-radius: 10px;
+    box-shadow: 0px 5px #D7861A;
+    width: 146px;
+    margin-left: 10px;
+}
+
+.next-button:hover{
+    background-color: #FFC860;
+}
+
+.xHover{
+    background-color: red;
+}

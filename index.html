@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tic Tac Toe</title>
+</head>
+<body>
+
+  <!-- New game menu start -->
+    <div class="starter-div">
+      <div class="logo">
+        <img src="/assets/logo.svg">
+      </div>
+      <div class="game-choice">
+        <p class="p-1">Pick player 1's mark</p>
+        <div class="x-o-choice">
+          <div class="background-x">
+            <svg id="icon-is-x" class="icons icon-x"   width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" /></svg>
+          </div>
+          <div class="background-o">
+            <svg id="icon-is-o" class="icons icon-o" width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0Zm0 18.963c-7.2 0-13.037 5.837-13.037 13.037 0 7.2 5.837 13.037 13.037 13.037 7.2 0 13.037-5.837 13.037-13.037 0-7.2-5.837-13.037-13.037-13.037Z" /></svg>
+          </div>
+        </div>
+        <p class="p-2">Remember: X goes first</p>
+      </div>
+      <div class="starter-button-holder">
+        <button class="starter-button cpu-button" type="button">New Game (vs CPU)</button>
+        <button id="vs-player" class="starter-button player-button" type="button">New Game (vs player)</button>
+      </div>
+    </div>
+  
+  <!-- Game board start -->
+    <div class="game-start">
+      <div class="row game-header">
+        <img class="game-logo" src="/assets/logo.svg">
+        <div class="turns">
+          <svg class="turns-x" width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0Zm0 18.963c-7.2 0-13.037 5.837-13.037 13.037 0 7.2 5.837 13.037 13.037 13.037 7.2 0 13.037-5.837 13.037-13.037 0-7.2-5.837-13.037-13.037-13.037Z" ></svg>
+          <svg class="turns-o" width="64" height="64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" /></svg>
+          <p>TURN</p>
+        </div>
+        <div class="restart">
+          <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M19.524 0h-1.88a.476.476 0 0 0-.476.499l.159 3.284A9.81 9.81 0 0 0 9.835.317C4.415.317-.004 4.743 0 10.167.004 15.597 4.406 20 9.835 20a9.796 9.796 0 0 0 6.59-2.536.476.476 0 0 0 .019-.692l-1.348-1.349a.476.476 0 0 0-.65-.022 6.976 6.976 0 0 1-9.85-.63 6.987 6.987 0 0 1 .63-9.857 6.976 6.976 0 0 1 10.403 1.348l-4.027-.193a.476.476 0 0 0-.498.476v1.881c0 .263.213.476.476.476h7.944A.476.476 0 0 0 20 8.426V.476A.476.476 0 0 0 19.524 0Z" fill="#1F3641"/></svg>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="row">
+        <div class="scores x-score">
+          <p class="score-ids">X(YOU)</p>
+          <p class="score-numbers">0</p>
+        </div>
+        <div class="scores ties-score">
+          <p class="score-ids">TIES</p>
+          <p class="score-numbers">0</p>
+        </div>
+        <div class="scores cpu-score">
+          <p class="score-ids">O(CPU)</p>
+          <p class="score-numbers">0</p>
+        </div>
+      </div>
+  
+    </div>
+
+  <!-- Game board end -->
+    <div class="end-board">
+      <div class="win-lose-text">
+
+      </div>
+      <div class="results">
+        <div class="winner-logo"></div>
+        <h1 class="results-text">TAKES THE ROUND</h1>
+      </div>
+      <div class="continue-buttons">
+        <button class="quit-button" type="button">QUIT</button>
+        <button class="next-button" type="button">NEXT ROUND</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script> 
+</body>
+</html>
