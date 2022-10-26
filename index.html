@@ -47,32 +47,32 @@
         </div>
       </div>
       <div class="row">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>        
+        <button class="box" index="0"></button>
+        <button class="box" index="1"></button>
+        <button class="box" index="2"></button>        
       </div>
       <div class="row">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
+        <button class="box" index="3"></button>
+        <button class="box" index="4"></button>
+        <button class="box" index="5"></button>
       </div>
       <div class="row">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
+        <button class="box" index="6"></button>
+        <button class="box" index="7"></button>
+        <button class="box" index="8"></button>
       </div>
       <div class="row">
         <div class="scores x-score">
-          <p class="score-ids">X(YOU)</p>
-          <p class="score-numbers">0</p>
+          <p class="score-ids">X(P1)</p>
+          <p id="p1-score" class="score-numbers">0</p>
         </div>
         <div class="scores ties-score">
           <p class="score-ids">TIES</p>
-          <p class="score-numbers">0</p>
+          <p id="tie-score" class="score-numbers">0</p>
         </div>
         <div class="scores cpu-score">
-          <p class="score-ids">O(CPU)</p>
-          <p class="score-numbers">0</p>
+          <p class="score-ids">O(P2)</p>
+          <p id="p2-score" class="score-numbers">0</p>
         </div>
       </div>
   
@@ -80,10 +80,11 @@
 
   <!-- Game board end -->
     <div class="end-board">
-      <div class="win-lose-text">
-
+      <div class="winner-player">
+        <p id="who-won"></p>
       </div>
       <div class="results">
+        
         <div class="winner-logo"></div>
         <h1 class="results-text">TAKES THE ROUND</h1>
       </div>
@@ -91,7 +92,12 @@
         <button class="quit-button" type="button">QUIT</button>
         <button class="next-button" type="button">NEXT ROUND</button>
       </div>
+      <div class="restart-buttons">
+        <button class="cancel" type="button">NO, CANCEL</button>
+        <button class="restart-button" type="button">YES, RESTART</button>
+      </div>
     </div>
     <script src="scripts.js"></script> 
+    
 </body>
 </html>

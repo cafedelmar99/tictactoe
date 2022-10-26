@@ -230,11 +230,14 @@ body{
     justify-content: center;
     align-items: center;
     display: none;
+    position: absolute;
 }
 
 .results{
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .results-text{
@@ -243,7 +246,10 @@ body{
     font-size: 40px;
     font-weight: 700;
 }
-
+.continue-buttons{
+    display: flex;
+    justify-content: center;
+}
 .quit-button,
 .next-button{
     height: 52px;
@@ -274,7 +280,56 @@ body{
 .next-button:hover{
     background-color: #FFC860;
 }
+/* safsa */
+
+.restart-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel,
+.restart-button{
+    height: 52px;
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    display: none;
+}
+
+.cancel{
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    box-shadow: 0px 5px #71706E;
+    width: 140px;
+}
+
+.cancel:hover{
+    background-color: #DBE8ED;
+}
+
+.restart-button{
+    background-color: #F2B137;
+    border-radius: 10px;
+    box-shadow: 0px 5px #D7861A;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.restart-button:hover{
+    background-color: #FFC860;
+}
+
+
 
 .xHover{
     background-color: red;
+}
+
+.winner-player{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #A8BFC9;
 }
